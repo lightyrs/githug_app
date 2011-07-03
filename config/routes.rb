@@ -1,4 +1,8 @@
 Githug::Application.routes.draw do
+  match 'demos' => 'demos#show'
+
+  # Demonstrations. Remove demo routes, controller, view, and stylesheet for production
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
