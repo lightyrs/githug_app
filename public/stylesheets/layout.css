@@ -16,20 +16,22 @@ body {
 
 /* line 7, sass/layout.scss */
 #container {
-  width: 960px;
+  width: 920px;
   margin: 0 auto;
+  padding: 0 20px;
   text-align: left; }
 
-/* line 13, sass/layout.scss */
+/* line 14, sass/layout.scss */
 header {
   padding: 20px 0 30px;
   text-align: left; }
 
-/* line 18, sass/layout.scss */
+/* line 19, sass/layout.scss */
 nav {
-  text-align: left; }
+  text-align: right;
+  line-height: 20px; }
 
-/* line 22, sass/layout.scss */
+/* line 24, sass/layout.scss */
 footer {
   padding: 40px 0;
   text-align: center; }

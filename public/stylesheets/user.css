@@ -1,0 +1,7 @@
+/* line 1, sass/user.scss */
+.meta {
+  padding: 10px 0; }
+  /* line 3, sass/user.scss */
+  .meta .label {
+    font-weight: bold;
+    padding: 0 0 5px; }

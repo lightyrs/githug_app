@@ -29,6 +29,8 @@ gem 'validates_existence', '~> 0.5'     # Validation of associations
 gem 'devise', '1.2.0'                   # Authentication
 gem 'omniauth', '0.2.0'                 # OAuth
 
+gem 'delayed_job'                       # Background tasks
+
 gem 'hoptoad_notifier'
 
 group :development, :test do
@@ -37,7 +39,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.5'
   gem 'rcov'
   gem 'forgery'                         # Easy generation of fake data
-#  gem 'pow'                             # Dev server
-#  gem 'powder'                          # Pow helpers
+# gem 'pow'                             # Dev server
+# gem 'powder'                          # Pow helpers
   gem 'thin'
 end

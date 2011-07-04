@@ -1,0 +1,25 @@
+.github
+  .meta.email
+    .label Email
+    = @user.email
+  .meta.name
+    .label Name
+    = @user.github_profile.name
+  .meta.nickname
+    .label Nickname
+    = @user.github_profile.nickname
+  .meta.company
+    .label Company
+    = @user.github_profile.company
+  .meta.location
+    .label Location
+    = @user.github_profile.location
+  .meta.profile-url
+    .label Profile URL
+    = link_to @user.github_profile.profile_url
+  .meta.blog-url
+    .label Blog URL
+    = link_to @user.github_profile.blog_url
+  .meta.member-since
+    .label Member Since
+    = @user.github_profile.join_date

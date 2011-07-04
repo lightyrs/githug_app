@@ -13,3 +13,4 @@ stylesheets:
   common:
     - public/stylesheets/flutie.css
     - public/stylesheets/layout.css
+    - public/stylesheets/user.css

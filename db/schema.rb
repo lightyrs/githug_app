@@ -10,7 +10,44 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 2) do
+ActiveRecord::Schema.define(:version => 5) do
+
+  create_table "authentications", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "uid"
+    t.string   "token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "delayed_jobs", :force => true do |t|
+    t.integer  "priority",   :default => 0
+    t.integer  "attempts",   :default => 0
+    t.text     "handler"
+    t.text     "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string   "locked_by"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
+
+  create_table "github_profiles", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "nickname"
+    t.string   "name"
+    t.string   "profile_url"
+    t.string   "blog_url"
+    t.string   "gravatar_id"
+    t.string   "company"
+    t.string   "location"
+    t.datetime "join_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "slugs", :force => true do |t|
     t.string   "name"
