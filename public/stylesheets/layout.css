@@ -1,0 +1,35 @@
+/* line 1, sass/header.scss */
+#logo {
+  width: 100px;
+  height: 45px;
+  float: left;
+  margin: 0 30px 0 0; }
+
+/* line 8, sass/header.scss */
+#page-nav {
+  width: 600px;
+  float: right; }
+
+/* line 3, sass/layout.scss */
+body {
+  text-align: center; }
+
+/* line 7, sass/layout.scss */
+#container {
+  width: 960px;
+  margin: 0 auto;
+  text-align: left; }
+
+/* line 13, sass/layout.scss */
+header {
+  padding: 20px 0 30px;
+  text-align: left; }
+
+/* line 18, sass/layout.scss */
+nav {
+  text-align: left; }
+
+/* line 22, sass/layout.scss */
+footer {
+  padding: 40px 0;
+  text-align: center; }

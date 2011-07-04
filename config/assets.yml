@@ -1,0 +1,15 @@
+package_assets: on
+embed_assets: on
+
+javascripts:
+  common:
+    - public/javascripts/jquery-1.6.1.min.js
+    - public/javascripts/rails.js
+    - public/javascripts/application.js
+  plugins:
+    - public/javascripts/vendor/prefilled_input.js
+
+stylesheets:
+  common:
+    - public/stylesheets/flutie.css
+    - public/stylesheets/layout.css

@@ -2,4 +2,6 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-Githug::Application.initialize!
+Githug::Application.initialize! do |config|
+  config.gem "jammit"
+end

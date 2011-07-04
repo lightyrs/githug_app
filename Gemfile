@@ -1,43 +1,43 @@
 # Gems host
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.0.7' # At least 3.0.7 but below 3.1
-gem 'rake', '~> 0.8.7'  # Rake 0.9 is incompatible with current version of Rails
-gem 'mysql2', '< 0.3'   # Database engine.  3.0 is not compatible with Rails 3.0.x
-gem 'hirb'              # Better console formatting. Needs .hirbrc
+gem 'rails', '3.0.9'                    # At least 3.0.7 but below 3.1
+gem 'rake', '~> 0.9.2'
+gem 'mysql2', '< 0.3'                   # Database engine.  3.0 is not compatible with Rails 3.0.x
+gem 'hirb'                              # Better console formatting. Needs .hirbrc
 
-gem 'capistrano'        # Deployment manager
+gem 'capistrano'                        # Deployment manager
 
-gem 'haml', '~> 3.1'    # Haml (html/erb replacement)
-gem 'sass', '~> 3.1'    # Sass (css replacement)
-gem 'haml-rails'        # Haml generators for Rails 3
+gem 'haml', '~> 3.1'                    # Haml (html/erb replacement)
+gem 'sass', '~> 3.1'                    # Sass (css replacement)
+gem 'haml-rails'                        # Haml generators for Rails 3
+gem 'hpricot'                           # Support Haml generation
+gem 'ruby_parser'                       # Support Haml generation
 
-# HTML/CSS framework and boilerplate
-gem 'compass', '>= 0.10.6'
-gem 'html5-boilerplate'
-# gem 'compass-960-plugin'
+gem 'jammit'                            # Static asset packager
+gem 'flutie'                            # Sensible style defaults
 
-gem 'friendly_id', '~> 3.2'         # Human readable URLs
-gem 'validates_existence', '~> 0.5' # Validation of associations
+gem 'nifty-generators'                  # Useful Rails generators
+gem 'formtastic'                        # Semantic forms
 
-# Optional gems below:
+gem 'compass', '>= 0.10.6'              # Object Oriented CSS
+gem 'html5-boilerplate'                 # Paul Irish HTML5 Boilerplate
 
-# gem 'devise', '~> 1.1'        # User authentication (accounts)
-# gem 'hpricot'                 # For Devise view generation
-# gem 'ruby_parser'             # For Devise view generation
-# gem 'cancan', '~> 1.5.1'      # User authorization (permissions)
+gem 'friendly_id', '~> 3.2'             # Human readable URLs
+gem 'validates_existence', '~> 0.5'     # Validation of associations
 
-# gem 'kramdown', '~> 0.13'     # To convert Markdown to HTML
-# gem 'will_paginate', '~> 3.0.pre2'  # Pagination of long lists
-# gem 'paperclip', '~> 2.3.8'   # File upload management
+gem 'devise', '1.2.0'                   # Authentication
+gem 'omniauth', '0.2.0'                 # OAuth
 
-# gem 'vestal_versions'         # To track changes to pages and other objects
-# gem 'paper_trail'             # To track changes to pages and other objects
+gem 'hoptoad_notifier'
 
 group :development, :test do
   gem 'factory_girl_rails', '~> 1.0'
   gem 'factory_girl_generator'
   gem 'rspec-rails', '~> 2.5'
   gem 'rcov'
-  gem 'forgery'                     # Easy generation of fake data
+  gem 'forgery'                         # Easy generation of fake data
+#  gem 'pow'                             # Dev server
+#  gem 'powder'                          # Pow helpers
+  gem 'thin'
 end

@@ -1,7 +1,12 @@
 Githug::Application.routes.draw do
-  match 'demos' => 'demos#show'
 
-  # Demonstrations. Remove demo routes, controller, view, and stylesheet for production
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } do
+    get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
+  end
+
+  resources :users
+
+  root :to => "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

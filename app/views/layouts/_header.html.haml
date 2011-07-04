@@ -1,2 +1,5 @@
-%h1
-  Welcome to the Web Site
+%div{:id => "logo", :itemscope => true, :itemtype => "http://schema.org/Organization"}
+  = image_tag "githug.png", :alt => "githug", :itemprop => "name", :content => "githug"
+
+%nav{:id => "page-nav"}
+  = render :partial => "layouts/nav"
